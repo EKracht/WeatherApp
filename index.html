@@ -2,29 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weather</title>
+  <title>Weather App</title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <h1>Weather App</h1>
 
   <p>Enter your zip code and press the button to get weather information!</p>
+
   <input type="number" id="zipCode" placeholder="zip code">
 
   <button id="getWeather">Get Weather!</button>
 
 </br>
 
-  <div class="currentWeather weatherBox"></div>
+  <div class="container">
+    <div class="row currentWeather weatherBox">
+    </div>
+  </div>
 
 </br>
 
-  <div class="futureWeather weatherBox"></div>
-
+  <div class="container">
+    <div class="row futureWeather weatherBox">
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://cdn.sobekrepository.org/includes/jquery-rotate/2.2/jquery-rotate.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
