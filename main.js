@@ -75,7 +75,7 @@ function makeCurrentCard(data){
 function makeCards(data){
   for (var i = 1; i <= 7; i = i + 2){
     var dataFrom = data.forecast.txt_forecast.forecastday[i];
-    var $card = $('<div>').addClass('card col-lg-6');
+    var $card = $('<div>').addClass('card');
     var $day = $('<div>').text(dataFrom.title);
     var $image = $('<img>').attr('src', dataFrom.icon_url);
     var $forecast = $('<div>').text('Forecast: ' + dataFrom.fcttext);
