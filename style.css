@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+}
+
+input {
+  margin: 10px;
+}
+
+button {
+  margin: 10px;
+  background-color: #7D1935;
+}
+
+.currentWeather {
+  border: 5px solid #D9853B;
+  margin-top: 12px;
+}
+
+.weatherBox {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.futureWeather {
+  border: 2px solid #D9853B;
+  display: inline-block;
+}
+
+.card {
+  border: 3px solid #D9853B;
+  display: inline-block;
+  margin: 10px;
+  width: 20%;
+}
+
+.specialCard {
+  border: 3px solid #D9853B;
+  display: inline-block;
+  margin: 12px;
+  width: 32%;
+}
