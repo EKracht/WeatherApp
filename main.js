@@ -52,7 +52,7 @@ function makeCurrentCard(data){
   var dataFromCur = data.current_observation;
   var $card = $('<div>').addClass('specialCard');
   var $location = $('<div>').text(dataFromCur.display_location.full);
-  var $day = $('<div>').text("Today");
+  var $day = $('<div>').text("Today, Current");
   var $image = $('<img>').attr('src', dataFromCur.icon_url);
   var $temperature = $('<div>').text('Temperature: ' + dataFromCur.temperature_string);
   var $weather = $('<div>').text('Weather: ' + dataFromCur.weather);
@@ -73,7 +73,7 @@ function makeCurrentCard(data){
 }
 
 function makeCards(data){
-  for (var i = 1; i <= 7; i = i + 2){
+  for (var i = 0; i <= 6; i = i + 2){
     var dataFrom = data.forecast.txt_forecast.forecastday[i];
     var $card = $('<div>').addClass('card');
     var $day = $('<div>').text(dataFrom.title);
